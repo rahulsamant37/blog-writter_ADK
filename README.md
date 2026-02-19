@@ -176,20 +176,43 @@ The agent guides you through the following steps:
 
 ## Example
 
+The Web UI and CLI follow the same conversation flow. A typical session looks like this:
+
 **User (Web UI or CLI):**
-> I want to write a blog post about Gemini 2.5 Flash.
+> I want to write a technical blog post about Gemini 2.5 Flash for backend engineers.
+> Target length: ~1,200 words. Include one short code snippet and practical guidance.
 
 **Agent:**
-> Here's an outline proposal for your review:
+> (Optional) Do you want to analyze a codebase directory for extra context, or should we proceed with general research?
+> Here’s an outline proposal for your review:
 >
-> 1. Introduction — What is Gemini 2.5 Flash and why it matters
-> 2. Key capabilities — Speed, efficiency, and multimodal support
-> 3. Benchmark comparisons — How it stacks up against other models
-> 4. Use cases — Where Gemini 2.5 Flash shines in production
-> 5. Getting started — API access and quick example
-> 6. Conclusion
+> 1. Overview — What Gemini 2.5 Flash is and where it fits
+> 2. Core capabilities — Latency, cost/efficiency, and multimodal inputs
+> 3. Practical use cases — Assistants, content extraction, RAG, and automation
+> 4. Integration patterns — Prompting, tools/function calling, and guardrails
+> 5. Quickstart — Minimal API example + best practices
+> 6. Wrap-up — When to choose Flash vs alternatives
 >
-> Does this outline work for you, or would you like to adjust any sections?
+> Would you like to adjust any sections before I draft?
+
+**User:**
+> Skip codebase analysis. The outline looks good — approve it.
+> Include image/diagram placeholders.
+
+**Agent:**
+> Great — I’ll write the first draft now. After you review it, tell me what to change (tone, depth, examples, structure).
+
+**User:**
+> Revise the Quickstart to include error handling and add a short checklist at the end.
+
+**Agent:**
+> Done. Want me to generate social media posts (X/LinkedIn) for this article?
+
+**User:**
+> Yes — 1 LinkedIn post and 3 X posts. Then export the final blog post to `my_new_blog_post.md`.
+
+**Agent:**
+> Saved: `my_new_blog_post.md`
 
 ---
 
